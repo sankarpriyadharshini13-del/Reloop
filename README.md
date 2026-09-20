@@ -8,6 +8,20 @@ Built for **Tech for Better Tomorrow (worldwide)**. Roughly 50 million tons of e
 
 **Stack:** Next.js 14 (App Router), Tailwind CSS 3, Lucide icons, Hugging Face Inference API (`microsoft/resnet-50`).
 
+## ReLoop Guide
+
+The floating chatbot button in the bottom-right corner is the **ReLoop Guide**. It is available on every page and helps
+users complete the main recycling workflow without leaving the current screen.
+
+- Ask how ReLoop works, why electronics should be recycled, what devices can be scanned, or how to prepare a device.
+- Tap the camera icon inside the guide to upload or capture an electronics photo. The guide reuses `POST /api/analyze`
+  and the same `lib/match.js` mapping as the full Scan page.
+- Use **Find a nearby drop-off** to allow browser location access and open a Google Maps search for nearby e-waste
+  recycling centers or electronics shops. The map link also works without location permission by searching near the user.
+
+The guide does not store chat messages or uploaded photos. Location is requested only after the user taps **Use my
+location**. On browsers that block geolocation, the Google Maps fallback still lets the user choose their area manually.
+
 ---
 
 ## Run it locally
@@ -59,6 +73,8 @@ HF_TOKEN=hf_xxxxxxxxxxxxxxxx
 5. If nothing maps to e-waste, the user gets a "pick your item" grid instead of a dead end.
 6. `ResultCard` shows the item, badges, toxic materials, CO₂ saved, tree equivalent, tip, Green Score
    (+10 per scan, stored in `localStorage`), a Google Maps embed, and Scan another / Share impact buttons.
+7. `ReLoopGuide` is mounted globally from `app/layout.jsx`. It provides quick answers, sends guide photos through the
+  existing analyzer, and builds a Google Maps nearby-search link from the user's coordinates when available.
 
 ### Tree equivalent
 
@@ -109,7 +125,7 @@ reloop-next/
 │   ├── globals.css            Tailwind layers, glass/button utilities
 │   └── icon.svg               Favicon
 ├── components/
-│   ├── Navbar.jsx  UploadBox.jsx  ResultCard.jsx  ImpactStats.jsx
+│   ├── Navbar.jsx  UploadBox.jsx  ResultCard.jsx  ImpactStats.jsx  ReLoopGuide.jsx
 │   ├── ScanClient.jsx         Scan flow state (upload → analyze → result)
 │   └── AnimatedNumber.jsx
 ├── data/ewasteData.json       25 items

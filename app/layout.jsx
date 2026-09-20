@@ -2,6 +2,7 @@ import '@fontsource-variable/bricolage-grotesque';
 import '@fontsource-variable/dm-sans';
 import './globals.css';
 import Navbar from '@/components/Navbar';
+import ReLoopGuide from '@/components/ReLoopGuide';
 
 const description =
   'Snap a photo of old electronics. ReLoop identifies the item, tells you if it is recyclable, how much CO2 you save, and where the nearest recycling centers are.';
@@ -39,6 +40,7 @@ export default function RootLayout({ children }) {
       <body>
         <Navbar />
         <main>{children}</main>
+        <ReLoopGuide />
       </body>
     </html>
   );
