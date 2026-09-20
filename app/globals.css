@@ -1,0 +1,84 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-tap-highlight-color: transparent;
+    text-size-adjust: 100%;
+  }
+  body {
+    @apply bg-ink font-sans text-slate-300 antialiased;
+    min-height: 100dvh;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display tracking-tight;
+  }
+  ::selection {
+    background: rgba(34, 197, 94, 0.35);
+    color: #fff;
+  }
+  :focus-visible {
+    outline: 2px solid #4ade80;
+    outline-offset: 3px;
+  }
+}
+
+@layer components {
+  /* Glass surfaces */
+  .glass {
+    @apply rounded-2xl border border-white/10 bg-white/[0.06] backdrop-blur-xl;
+    box-shadow: 0 10px 40px -14px rgba(0, 0, 0, 0.55), inset 0 1px 0 rgba(255, 255, 255, 0.06);
+  }
+  .glass-strong {
+    @apply rounded-2xl border border-white/15 bg-white/[0.09] backdrop-blur-2xl;
+    box-shadow: 0 20px 60px -20px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  }
+  .glass-light {
+    @apply rounded-2xl border border-green-900/10 bg-white/80 backdrop-blur-xl;
+    box-shadow: 0 12px 40px -18px rgba(22, 101, 52, 0.35);
+  }
+
+  /* Buttons */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-gradient-to-br from-green-500 to-green-600 px-6 py-3.5 text-base font-semibold text-white shadow-lg shadow-green-600/30 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl hover:shadow-green-600/40 active:translate-y-0 disabled:cursor-not-allowed disabled:opacity-60 disabled:hover:translate-y-0;
+  }
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl border border-white/15 bg-white/5 px-6 py-3.5 text-base font-semibold text-white transition duration-200 hover:bg-white/10 active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-60;
+  }
+  .btn-white {
+    @apply inline-flex items-center justify-center gap-2 rounded-2xl bg-white px-6 py-3.5 text-base font-semibold text-ink shadow-lg shadow-black/10 transition duration-200 hover:-translate-y-0.5 hover:shadow-xl;
+  }
+
+  /* The one gradient accent used for large numbers */
+  .text-gradient {
+    @apply bg-gradient-to-r from-green-300 to-green-500 bg-clip-text text-transparent;
+  }
+
+  /* Faint engineering-paper grid behind the hero */
+  .bg-grid {
+    background-image:
+      linear-gradient(rgba(255, 255, 255, 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgba(255, 255, 255, 0.045) 1px, transparent 1px);
+    background-size: 44px 44px;
+    mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+    -webkit-mask-image: radial-gradient(ellipse 70% 60% at 50% 30%, #000 30%, transparent 75%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

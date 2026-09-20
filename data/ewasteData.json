@@ -1,0 +1,389 @@
+{
+  "cell phone": {
+    "name": "Cell Phone",
+    "emoji": "📱",
+    "category": "Mobile",
+    "co2": 0.8,
+    "toxic": "Lithium, Lead, Brominated flame retardants",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Back up and factory-reset it, take out the SIM and memory card, then hand it to a certified take-back point.",
+    "keywords": [
+      "cell phone",
+      "cellular telephone",
+      "cellphone",
+      "mobile phone",
+      "smartphone",
+      "ipod",
+      "dial telephone",
+      "pay-phone"
+    ]
+  },
+  "laptop": {
+    "name": "Laptop",
+    "emoji": "💻",
+    "category": "Computing",
+    "co2": 5.0,
+    "toxic": "Lead, Lithium, Mercury (older screens)",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Wipe your data securely and log out of all accounts. Reusable laptops are often better donated first.",
+    "keywords": [
+      "laptop",
+      "notebook computer",
+      "notebook"
+    ]
+  },
+  "tablet": {
+    "name": "Tablet",
+    "emoji": "📲",
+    "category": "Mobile",
+    "co2": 2.5,
+    "toxic": "Lithium, Lead, Indium",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Sign out of your accounts and factory-reset. A swollen battery means it must go to a hazardous-waste drop-off.",
+    "keywords": [
+      "tablet",
+      "hand-held computer",
+      "ipad",
+      "e-reader"
+    ]
+  },
+  "desktop computer": {
+    "name": "Desktop Computer",
+    "emoji": "🖥️",
+    "category": "Computing",
+    "co2": 12.0,
+    "toxic": "Lead, Cadmium, Chromium, Flame retardants",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Wipe or remove the hard drive first. RAM, drives and power supplies can often be reused before recycling.",
+    "keywords": [
+      "desktop computer",
+      "personal computer",
+      "computer tower"
+    ]
+  },
+  "monitor": {
+    "name": "Monitor",
+    "emoji": "🖥️",
+    "category": "Display",
+    "co2": 6.0,
+    "toxic": "Lead (CRT), Mercury (older LCDs), Cadmium",
+    "recyclable": true,
+    "hazard": "high",
+    "tip": "Never smash or open the screen. Older CRT and LCD monitors need certified handlers.",
+    "keywords": [
+      "monitor",
+      "crt screen",
+      "computer screen"
+    ]
+  },
+  "tv": {
+    "name": "Television",
+    "emoji": "📺",
+    "category": "Display",
+    "co2": 15.0,
+    "toxic": "Lead (CRT glass), Mercury, Cadmium",
+    "recyclable": true,
+    "hazard": "high",
+    "tip": "Don't put it out with regular trash. Many retailers take old TVs back when you buy a new one.",
+    "keywords": [
+      "television",
+      "tv"
+    ]
+  },
+  "keyboard": {
+    "name": "Keyboard",
+    "emoji": "⌨️",
+    "category": "Peripherals",
+    "co2": 0.6,
+    "toxic": "Lead solder, Brominated flame retardants",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Unplug it and remove batteries if wireless. The plastics and metals are recoverable.",
+    "keywords": [
+      "computer keyboard",
+      "keyboard",
+      "keypad",
+      "typewriter keyboard",
+      "space bar"
+    ]
+  },
+  "mouse": {
+    "name": "Computer Mouse",
+    "emoji": "🖱️",
+    "category": "Peripherals",
+    "co2": 0.3,
+    "toxic": "Lead solder, Lithium (wireless models)",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Take out the batteries and recycle them separately. Bundle small peripherals for one drop-off.",
+    "keywords": [
+      "computer mouse",
+      "mouse",
+      "trackball"
+    ]
+  },
+  "printer": {
+    "name": "Printer",
+    "emoji": "🖨️",
+    "category": "Peripherals",
+    "co2": 4.0,
+    "toxic": "Toner dust, Lead, Flame retardants",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Remove ink or toner cartridges first. Many brands run free cartridge return programs.",
+    "keywords": [
+      "printer",
+      "photocopier",
+      "copier"
+    ]
+  },
+  "charger": {
+    "name": "Charger / Adapter",
+    "emoji": "🔌",
+    "category": "Power",
+    "co2": 0.3,
+    "toxic": "Lead, Brominated flame retardants",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Bundle cables and adapters together. The copper inside is highly recoverable.",
+    "keywords": [
+      "charger",
+      "adapter",
+      "adaptor",
+      "power cord",
+      "extension cord",
+      "power strip"
+    ]
+  },
+  "battery": {
+    "name": "Battery",
+    "emoji": "🔋",
+    "category": "Power",
+    "co2": 0.4,
+    "toxic": "Lithium, Cadmium, Nickel, Lead, Acid",
+    "recyclable": true,
+    "hazard": "high",
+    "tip": "Tape the terminals, keep it dry and never put it in a household bin. Damaged batteries are a fire risk.",
+    "keywords": [
+      "battery",
+      "batteries",
+      "accumulator"
+    ]
+  },
+  "power bank": {
+    "name": "Power Bank",
+    "emoji": "🪫",
+    "category": "Power",
+    "co2": 1.2,
+    "toxic": "Lithium-ion cells",
+    "recyclable": true,
+    "hazard": "high",
+    "tip": "Swollen or damaged? Keep it away from heat and take it to a hazardous-waste drop-off.",
+    "keywords": [
+      "power bank",
+      "powerbank"
+    ]
+  },
+  "earphone": {
+    "name": "Earphones / Headphones",
+    "emoji": "🎧",
+    "category": "Audio",
+    "co2": 0.2,
+    "toxic": "Lead solder, Lithium (wireless buds), Copper",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Wireless earbuds contain tiny batteries, so they belong at an e-waste point, not in the bin.",
+    "keywords": [
+      "earphone",
+      "headphone",
+      "earbud",
+      "headset",
+      "earpiece"
+    ]
+  },
+  "speaker": {
+    "name": "Speaker",
+    "emoji": "🔊",
+    "category": "Audio",
+    "co2": 2.0,
+    "toxic": "Lead, Lithium (Bluetooth models), Neodymium magnets",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Remove any batteries. The magnets and copper coils are valuable to recyclers.",
+    "keywords": [
+      "speaker",
+      "loudspeaker",
+      "subwoofer"
+    ]
+  },
+  "camera": {
+    "name": "Camera",
+    "emoji": "📷",
+    "category": "Imaging",
+    "co2": 1.5,
+    "toxic": "Lithium, Lead, Cadmium",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Take out the battery and memory card. Working cameras are great for donation or resale.",
+    "keywords": [
+      "camera",
+      "camcorder",
+      "polaroid"
+    ]
+  },
+  "smartwatch": {
+    "name": "Smartwatch",
+    "emoji": "⌚",
+    "category": "Mobile",
+    "co2": 0.4,
+    "toxic": "Lithium, Lead, Nickel",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Unpair and factory-reset it. The sealed battery means it needs a proper e-waste drop-off.",
+    "keywords": [
+      "smartwatch",
+      "smart watch",
+      "digital watch"
+    ]
+  },
+  "remote control": {
+    "name": "Remote Control",
+    "emoji": "📡",
+    "category": "Peripherals",
+    "co2": 0.1,
+    "toxic": "Batteries, Lead solder",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Remove the batteries and recycle them separately from the remote.",
+    "keywords": [
+      "remote control",
+      "remote"
+    ]
+  },
+  "router": {
+    "name": "Router / Modem",
+    "emoji": "📶",
+    "category": "Network & Storage",
+    "co2": 1.0,
+    "toxic": "Lead, Flame retardants",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Factory-reset it first. Many internet providers will take old routers back for free.",
+    "keywords": [
+      "router",
+      "modem",
+      "set-top box"
+    ]
+  },
+  "hard drive": {
+    "name": "Hard Drive",
+    "emoji": "💾",
+    "category": "Network & Storage",
+    "co2": 1.5,
+    "toxic": "Lead, Rare-earth magnets, Flame retardants",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Wipe it or use certified data destruction. Deleting files alone is not enough.",
+    "keywords": [
+      "hard disc",
+      "hard disk",
+      "hard drive",
+      "fixed disk",
+      "flash drive",
+      "ssd"
+    ]
+  },
+  "game controller": {
+    "name": "Game Controller",
+    "emoji": "🎮",
+    "category": "Gaming",
+    "co2": 0.5,
+    "toxic": "Lithium, Lead",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Remove the battery pack if you can. Working controllers are easy to donate.",
+    "keywords": [
+      "joystick",
+      "gamepad",
+      "game controller",
+      "controller"
+    ]
+  },
+  "microwave": {
+    "name": "Microwave Oven",
+    "emoji": "🍲",
+    "category": "Appliance",
+    "co2": 7.0,
+    "toxic": "Lead, Old capacitors (PCBs), Flame retardants",
+    "recyclable": true,
+    "hazard": "medium",
+    "tip": "Capacitors hold a charge even when unplugged, so don't open it. Ask your bulky-waste service for pickup.",
+    "keywords": [
+      "microwave",
+      "microwave oven"
+    ]
+  },
+  "refrigerator": {
+    "name": "Refrigerator",
+    "emoji": "🧊",
+    "category": "Appliance",
+    "co2": 25.0,
+    "toxic": "Refrigerants (CFC/HFC), Oils, Mercury switches",
+    "recyclable": true,
+    "hazard": "high",
+    "tip": "A licensed handler must recover the refrigerant. Don't dismantle it. Many retailers haul the old unit away on delivery.",
+    "keywords": [
+      "refrigerator",
+      "fridge",
+      "icebox"
+    ]
+  },
+  "washing machine": {
+    "name": "Washing Machine",
+    "emoji": "🧺",
+    "category": "Appliance",
+    "co2": 10.0,
+    "toxic": "Lead, Oils, Mercury switches (older models)",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "It's mostly steel, so scrap collectors and retailer take-back schemes will usually collect it.",
+    "keywords": [
+      "washing machine",
+      "automatic washer"
+    ]
+  },
+  "electric fan": {
+    "name": "Electric Fan",
+    "emoji": "🌀",
+    "category": "Appliance",
+    "co2": 2.0,
+    "toxic": "Lead, Flame retardants, Copper windings",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Small appliances go to an e-waste point, not the bin. The motor's copper is recoverable.",
+    "keywords": [
+      "electric fan",
+      "ceiling fan"
+    ]
+  },
+  "hair dryer": {
+    "name": "Hair Dryer",
+    "emoji": "💨",
+    "category": "Appliance",
+    "co2": 0.8,
+    "toxic": "Lead, Flame retardants",
+    "recyclable": true,
+    "hazard": "low",
+    "tip": "Take it to an e-waste collection point. The heating coil and motor contain reusable metals.",
+    "keywords": [
+      "hair dryer",
+      "hair drier",
+      "blow dryer",
+      "blow drier"
+    ]
+  }
+}
