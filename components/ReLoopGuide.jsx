@@ -101,8 +101,8 @@ export default function ReLoopGuide() {
   return (
     <div className="fixed bottom-4 right-4 z-[60] sm:bottom-6 sm:right-6">
       {open && (
-        <section className="glass-strong mb-3 flex w-[min( calc(100vw-2rem),24rem)] max-w-[calc(100vw-2rem)] flex-col overflow-hidden shadow-2xl shadow-black/40 sm:w-96" aria-label="ReLoop guide chat">
-          <header className="flex items-center justify-between border-b border-white/10 bg-green-500/10 px-4 py-3">
+        <section className="mb-3 flex w-[min( calc(100vw-2rem),24rem)] max-w-[calc(100vw-2rem)] flex-col overflow-hidden rounded-2xl border border-white/15 bg-ink-deep shadow-2xl shadow-black/60 sm:w-96" aria-label="ReLoop guide chat">
+          <header className="flex items-center justify-between border-b border-white/15 bg-ink-soft px-4 py-3">
             <div className="flex items-center gap-3">
               <span className="grid h-10 w-10 place-items-center rounded-xl bg-green-500 text-white shadow-glow"><Bot className="h-5 w-5" aria-hidden="true" /></span>
               <div><p className="font-display font-bold text-white">ReLoop Guide</p><p className="text-xs text-green-300">Here to help you loop it back</p></div>
@@ -110,10 +110,10 @@ export default function ReLoopGuide() {
             <button type="button" onClick={() => setOpen(false)} className="grid h-9 w-9 place-items-center rounded-xl text-slate-300 transition hover:bg-white/10 hover:text-white" aria-label="Close ReLoop Guide"><X className="h-5 w-5" /></button>
           </header>
 
-          <div className="max-h-[min(24rem,52vh)] space-y-3 overflow-y-auto p-4" aria-live="polite">
+          <div className="max-h-[min(24rem,52vh)] space-y-3 overflow-y-auto bg-ink-deep p-4" aria-live="polite">
             {messages.map((message, index) => (
               <div key={`${message.from}-${index}`} className={`flex ${message.from === 'user' ? 'justify-end' : 'justify-start'}`}>
-                <p className={`max-w-[88%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${message.from === 'user' ? 'rounded-br-md bg-green-500 text-white' : 'rounded-bl-md bg-white/[0.07] text-slate-200'}`}>{message.text}</p>
+                <p className={`max-w-[88%] rounded-2xl px-3.5 py-2.5 text-sm leading-relaxed ${message.from === 'user' ? 'rounded-br-md bg-green-500 text-white' : 'rounded-bl-md border border-white/10 bg-ink-soft text-slate-100'}`}>{message.text}</p>
               </div>
             ))}
 
@@ -128,7 +128,7 @@ export default function ReLoopGuide() {
               </div>
             )}
 
-            <div className="rounded-2xl border border-white/10 bg-white/[0.04] p-3">
+            <div className="rounded-2xl border border-white/15 bg-ink-soft p-3">
               <div className="flex items-center justify-between gap-2"><p className="text-sm font-semibold text-white">Find a nearby drop-off</p><MapPin className="h-4 w-4 text-green-400" aria-hidden="true" /></div>
               <div className="mt-2 flex gap-2">
                 <button type="button" onClick={findNearby} disabled={locating} className="btn-primary !flex-1 !rounded-xl !px-3 !py-2.5 text-sm">{locating ? <Loader2 className="h-4 w-4 animate-spin" /> : <MapPin className="h-4 w-4" />} {locating ? 'Locating...' : 'Use my location'}</button>
@@ -138,10 +138,10 @@ export default function ReLoopGuide() {
             </div>
           </div>
 
-          <form onSubmit={(event) => { event.preventDefault(); ask(); }} className="flex items-center gap-2 border-t border-white/10 p-3">
+          <form onSubmit={(event) => { event.preventDefault(); ask(); }} className="flex items-center gap-2 border-t border-white/15 bg-ink-soft p-3">
             <input ref={fileRef} type="file" accept="image/*" capture="environment" className="hidden" onChange={(event) => { analyzePhoto(event.target.files?.[0]); event.target.value = ''; }} />
             <button type="button" onClick={() => fileRef.current?.click()} disabled={analyzing} className="grid h-10 w-10 shrink-0 place-items-center rounded-xl border border-white/10 text-green-300 transition hover:bg-white/10 disabled:opacity-50" aria-label="Analyze an electronics photo" title="Analyze a photo"><Camera className="h-5 w-5" /></button>
-            <input value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Ask ReLoop..." className="min-w-0 flex-1 rounded-xl border border-white/10 bg-white/[0.06] px-3 py-2.5 text-sm text-white placeholder:text-slate-500 focus:border-green-400/50 focus:outline-none" aria-label="Ask ReLoop a question" />
+            <input value={question} onChange={(event) => setQuestion(event.target.value)} placeholder="Ask ReLoop..." className="min-w-0 flex-1 rounded-xl border border-white/15 bg-ink-deep px-3 py-2.5 text-sm text-white placeholder:text-slate-400 focus:border-green-400/70 focus:outline-none" aria-label="Ask ReLoop a question" />
             <button type="submit" className="grid h-10 w-10 shrink-0 place-items-center rounded-xl bg-green-500 text-white transition hover:bg-green-400" aria-label="Send question"><Send className="h-4 w-4" /></button>
           </form>
         </section>
